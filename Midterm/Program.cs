@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Midterm
 {
@@ -9,15 +9,21 @@ namespace Midterm
 
             //1 Created Project Midterm
             Console.WriteLine("1) Midterm Project Created");
-            //2
-            Console.WriteLine("2) ");
+            //2 Control structures are blocks of programming that analyzes variables and choses a direction based on parameters 
+            Console.WriteLine("2) see comment lines in program");
+            // There are three types of control structures, 1) Sequential control structures, 2) selection control structures, and 3) repitition control structures
+            // 1) Sequential control structures are the typical control structures that execute line by line in a program. 
+            // 2) selection (decision) control structures include if/else statements and if clauses. It allows the program to select between two different actions depending on conditions
+            // 3) Repitition statements allow a program to perform statements repeatedly, depending on value of loop-continuation conditions, these include while, do while, for, and foreach loops
+
+
+
             //3 Infinite loop
             Console.WriteLine("3) Infinite loop");
-            bool keepLooping = false;
+            bool keepLooping = true;
             while (keepLooping == true)
             {
                 //keep looping
-                Console.WriteLine("change this");
             }
 
             //4 : 2 to 128 
@@ -36,7 +42,7 @@ namespace Midterm
             }
 
             //5 40 to 1 (comma)
-            Console.WriteLine("5) 40 to 1 (comma)");
+            Console.WriteLine("5) 49 to 1 (comma)");
             for (int xx = 49; xx > 0; --xx)
             {
                 if (xx == 1)
@@ -88,8 +94,15 @@ namespace Midterm
             int a2Index = 4;
             int counter = 0;
 
+            int spaceCounter = 0;
+
             for (int i = 0; i < 5; i++)
             {
+                for (int i1 = 0; i1 < spaceCounter; i1++)
+                {
+                    Console.Write(" ");
+                }
+
                 for (int iii = 0; iii < a1Index; iii++)
                 {
                     Console.Write(array1[iii]);
@@ -110,6 +123,8 @@ namespace Midterm
                     Console.Write(array2[3]);
                 }
                 Console.WriteLine();
+
+                spaceCounter++;
             }
 
             Console.ReadLine();
